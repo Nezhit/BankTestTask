@@ -19,4 +19,5 @@ public interface ClientRepo extends JpaRepository<Client,Long> {
     List<Client> findByFIO(@Param("name") String name,
                            @Param("surname") String surname,
                            @Param("papaname") String papaname);
+    boolean existsByLogin(String login);
 }

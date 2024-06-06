@@ -16,4 +16,9 @@ public class LoginRequest {
 
     @NotBlank(message = "Password is mandatory")
     private String password;
+
+    public LoginRequest(String login, String password) {
+        this.login = login;
+        this.password = password;
+    }
 }

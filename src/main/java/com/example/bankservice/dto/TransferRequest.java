@@ -18,4 +18,9 @@ public class TransferRequest {
 
     @Min(value = 0, message = "Transfer amount must be positive")
     private double money;
+    public TransferRequest(String loginSender, String loginReceiver, double money){
+        this.loginReceiver = loginReceiver;
+        this.loginSender = loginSender;
+        this.money = money;
+    }
 }
